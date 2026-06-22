@@ -1,10 +1,10 @@
 {
   "id": "agentstub",
-  "name": "OpenClaw Editor Agent (template)",
-  "description": "Skeleton editor-agent: live echo proof + TODO pipeline stubs",
+  "name": "OpenClaw Editor Agent",
+  "description": "Telegram editor-agent with Tavily search, OpenRouter generation, review loop and approval gate",
   "activation": {
     "onStartup": true,
-    "onCommands": ["start"]
+    "onCommands": ["start", "draft"]
   },
   "configSchema": {
     "type": "object",
