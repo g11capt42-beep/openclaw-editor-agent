@@ -1,0 +1,10 @@
+{
+  "name": "openclaw-editor-agent-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "GitHub template: каркас editor-агента на OpenClaw (логику дописывает кандидат)",
+  "scripts": {
+    "start": "bash deploy/entrypoint.sh"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "agentstub",
+  "name": "OpenClaw Editor Agent (template)",
+  "description": "Skeleton editor-agent: live echo proof + TODO pipeline stubs",
+  "activation": {
+    "onStartup": true,
+    "onCommands": ["start"]
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

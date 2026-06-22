@@ -1,0 +1,31 @@
+{
+  "agents": {
+    "defaults": {
+      "model": { "primary": "openrouter/openai/gpt-4o-mini" },
+      "thinkingDefault": "off"
+    }
+  },
+  "gateway": { "mode": "local" },
+  "tools": {
+    "web": { "search": { "provider": "tavily" } }
+  },
+  "plugins": {
+    "load": { "paths": ["/app/plugins/agent-stub"] },
+    "entries": {
+      "openrouter": { "enabled": true },
+      "telegram": { "enabled": true },
+      "tavily": { "enabled": true },
+      "agentstub": { "enabled": true }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "open",
+      "allowFrom": ["*"],
+      "streaming": { "mode": "off" },
+      "errorPolicy": "silent"
+    }
+  },
+  "commands": { "text": true }
+}

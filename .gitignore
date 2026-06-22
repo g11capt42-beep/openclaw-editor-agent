@@ -1,0 +1,47 @@
+# ── Секреты: НИКОГДА не коммитить ──
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+**/secrets/
+credentials/
+
+# ── Локальные данные OpenClaw (содержат токены!) ──
+.openclaw/
+**/.openclaw/
+openclaw.json
+**/openclaw.json
+auth-profiles.json
+!config.example.json
+
+# ── Node ──
+node_modules/
+**/node_modules/
+npm-debug.log*
+
+# ── Логи (могут содержать токены при ошибках) ──
+*.log
+logs/
+
+# ── Состояние / БД ──
+*.sqlite
+*.sqlite-journal
+*.db
+data/
+sessions/
+*.jsonl
+
+# ── IDE / системное ──
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+tmp/
+temp/
+*.tmp

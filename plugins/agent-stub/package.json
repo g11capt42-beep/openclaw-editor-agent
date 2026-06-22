@@ -1,0 +1,13 @@
+{
+  "name": "agentstub",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "openclaw": {
+    "extensions": ["./index.js"],
+    "compat": {
+      "pluginApi": ">=2026.5.0",
+      "minGatewayVersion": "2026.5.0"
+    }
+  }
+}
